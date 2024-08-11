@@ -19,7 +19,7 @@ body {
  }
 
  .col {
-    border:solid purple;
+    /* border:solid purple; */
     width:100%;
    
  }
@@ -53,11 +53,11 @@ body {
 }
 
 #section1 {
-    border: solid red;
+    /* border: solid red; */
 }
 
 #cards {
-    border: solid green;
+    /* border: solid green; */
     
 }
 
