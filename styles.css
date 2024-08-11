@@ -1,0 +1,75 @@
+body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+  
+  html {
+    height: -webkit-fill-available;
+  }
+  
+
+
+ .container-fluid {
+    height:100vh;
+ }
+
+ .row {
+    height:100%;
+    
+ }
+
+ .col {
+    border:solid purple;
+    width:100%;
+   
+ }
+
+ #left {
+    background: var(--bs-dark);
+    color: white;
+ }
+
+ #right {
+    background: var(--bs-secondary-bg);
+    padding:0px;
+ }
+
+#favicon {
+    margin: 5px;
+    margin-top:10px;
+}
+
+#navtitle {
+    font-size: 27px;
+}
+
+.nav-link {
+    margin:5px;
+    transition:  0.3s ease;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+#section1 {
+    border: solid red;
+}
+
+#cards {
+    border: solid green;
+    
+}
+
+#cardimg1 {
+
+}
+
+
+#cardimg2 {
+    height: 190px;
+}
+
+#cardimg3 {
+    height:190px;
+}
