@@ -1,43 +1,47 @@
 body {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-    font-family: 'Catamaran';
-  }
-  
+    min-height: 100vh; 
+    font-family: 'Catamaran', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     height: -webkit-fill-available;
     scroll-behavior: smooth;
-  }
-  
-
+}
 
 .container-fluid {
-    height:100vh;
- }
+    height: 100%;
+    padding: 0;
+}
 
 .row {
-    height:100%;
- }
-
-.col {
-    width:100%;
- }
+    height: 100%;
+    margin: 0;
+}
 
 #left {
     background: var(--bs-dark);
     color: white;
-    width:20%;
-    }
+    width: 20%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
 
- #right {
+#right {
     background: var(--bs-secondary-bg);
-    padding:0px;
-    width:80%;
- }
+    padding: 0 0 0 20px; /* Add left padding */
+    margin-left: 20%; /* Space for the fixed sidebar */
+    width: 80%;
+}
+
+
 
 #favicon {
     margin: 5px;
-    margin-top:10px;
+    margin-top: 10px;
     border-radius: 5px;
 }
 
@@ -46,57 +50,57 @@ html {
 }
 
 .nav-link {
-    margin:5px;
-    transition:  0.3s ease;
+    margin: 5px;
+    transition: 0.3s ease;
 }
 
 .nav-link.active {
     font-weight: bold;
 }
 
-nav {
-    position:fixed;
+.card-img-top {
+    object-fit: cover; /* Ensures the image covers the card area */
+    width: 100%;
+    height: 190px; /* Fixed height for card images */
 }
 
-#cardimg2 {
+.card {
+    width: 18rem;
+}
+
+#cardimg1, #cardimg2, #cardimg3 {
     height: 190px;
 }
 
-#cardimg3 {
-    height:190px;
+#about-me, #skill, #exp, #resume, #cards {
+    height: fit-content;
 }
 
-
-#about-me {
-    
-    height:fit-content;
-    
-    border: solid red;
+.accordion-item {
+    margin-top: 10px;
 }
 
-#skill {
-    height:fit-content;
-    border: solid green;
+.iconcard {
+    margin: 10px; 
 }
 
-
-
-#exp {
-    height:fit-content;
-    border:solid blue;
+.iconbox {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
 }
 
-#resume {
-    border:solid orange;
-    height:fit-content;
+.card-body {
+    padding-top: 0;
 }
 
 #cards {
-    border:solid purple;
-    height:fit-content;
-    
+    margin-top: 20px; /* Add space above the card section */
 }
 
-#accordian {
-    border:solid red;
+#cards .d-flex {
+    gap: 1rem; /* Space between cards */
+}
+
+#cards .card {
+    flex: 1;
 }

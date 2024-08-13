@@ -38,7 +38,7 @@
       <!-- start right col -->
       <div id="right" class="col "> 
         <section id="about">
-          <div id="about-me" class="container-fluid bg-light">
+          <div id="about-me" class="container-fluid">
             <h1>About me</h1>          
             <p>some text about some paragraphs</p>
             <p>resume stuff and skills lists</p> 
@@ -48,38 +48,133 @@
         <section id="skill">
           <div id="skill" class="container-fluid">
             <h1>Skills</h1>
-            <p>get icons for the following things and add to svg folder</p>
-            <p>maybe do dropdowns for each category?</p>
+            
               
             <!-- start accordion -->
             <div class="accordion" id="accordionExample">
+              
               <!-- start item 1  -->
               <div class="accordion-item">  
                 <h2 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Accordion Item #1
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <strong>CAD</strong>
                   </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    This is the first item's accordion body.It is shown by default
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body ">
+                    <div class="row">
+                      <!-- start cards -->
+                      <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                        <div class="iconbox">
+                          <div class="card" >
+                            <img id="cardimg1" src="icons/onshape.png" class="card-img-top" alt="onshape logo">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">OnShape</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                        <div class="iconbox">
+                          <div class="card">
+                            <img id="cardimg1" src="icons/NX.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">Siemens NX</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                        <div class="iconbox">
+                          <div class="card">
+                            <img id="cardimg1" src="icons/fusion.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">Fusion 360</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                        <div class="iconbox">
+                          <div class="card">
+                            <img id="cardimg1" src="icons/Autodesk Inventor.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">Autodesk Inventor</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end cards -->
+                    </div>
                   </div>
                 </div>
               </div> 
               <!-- end item 1 -->
 
+              
               <!-- start item 2 -->
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Accordion Item #2
+                    <strong>Simulation</strong>
                   </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    classes that we use to style each element. These classes TML 
+                        <!-- add show after collapse to show by default-->
+                    <div class="row">
+                      <!-- start cards -->
+                      <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                        <div class="iconbox">
+                          <div class="card" >
+                            <img id="cardimg1" src="icons/starccm.png" class="card-img-top" alt="onshape logo">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">StarCCm</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                        <div class="iconbox">
+                          <div class="card">
+                            <img id="cardimg1" src="icons/Simulink.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">Simulink</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                        <div class="iconbox">
+                          <div class="card">
+                            <img id="cardimg2" src="icons/simscape.jpg" style="scale:100%; padding-top:20px; padding-bottom:33px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">Simscape Multibody</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                        <div class="iconbox">
+                          <div class="card">
+                            <img id="cardimg1" src="icons/ltspice.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">LTspice</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end cards -->
+
                   </div>
                 </div>
+              </div>
               </div>
               <!-- end item 2 -->
 
@@ -87,17 +182,64 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Accordion Item #3
+                    <strong>Software</strong>
                   </button>
                 </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample" >
+                <div id="collapseThree" class="accordion-collapse collapse " data-bs-parent="#accordionExample" >
                   <div class="accordion-body">
-                    plu use to style each element. These classes 
+                    <div class="row">
+                      <!-- start cards -->
+                      <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                        <div class="iconbox">
+                          <div class="card" >
+                            <img id="cardimg1" src="icons/MSoffice.svg" class="card-img-top" alt="onshape logo">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">MS Office</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                        <div class="iconbox">
+                          <div class="card">
+                            <img id="cardimg1" src="icons/google.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">Google Suit</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                        <div class="iconbox">
+                          <div class="card">
+                            <img id="cardimg1" src="icons//labview.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">NI LabView</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                        <div class="iconbox">
+                          <div class="card">
+                            <img id="cardimg3" src="icons/matlab.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">Matlab</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end row 1 cards -->   
+                  
                   </div>
                 </div>
               </div>
               <!-- end item 3 -->
             </div>
+
             <!-- end accordion -->
             <br>
 
@@ -178,7 +320,6 @@
           </div>
         </section>
               
-
         <section id="project">
           <div id="cards" class="container-fluid  ">   
             <h1>Projects</h1>
@@ -196,7 +337,7 @@
               </div>
 
               <!-- card 2 -->
-              <div class="p-2">
+              <div class="p-1">
                 <div class="card" style="width: 18rem;">
                   <img id="cardimg2" src="img/aspire6.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
