@@ -1,34 +1,33 @@
 body {
     min-height: 100vh;
     min-height: -webkit-fill-available;
+    font-family: 'Catamaran';
   }
   
-  html {
+html {
     height: -webkit-fill-available;
+    scroll-behavior: smooth;
   }
   
 
 
- .container-fluid {
+.container-fluid {
     height:100vh;
  }
 
- .row {
+.row {
     height:100%;
-    
  }
 
- .col {
-   
+.col {
     width:100%;
-   
  }
 
- #left {
+#left {
     background: var(--bs-dark);
     color: white;
     width:20%;
- }
+    }
 
  #right {
     background: var(--bs-secondary-bg);
@@ -43,8 +42,7 @@ body {
 }
 
 #navtitle {
-    font-size: 27px;
-    
+    font-size: 27px;   
 }
 
 .nav-link {
@@ -56,7 +54,9 @@ body {
     font-weight: bold;
 }
 
-
+nav {
+    position:fixed;
+}
 
 #cardimg2 {
     height: 190px;
@@ -66,15 +66,29 @@ body {
     height:190px;
 }
 
+
 #about-me {
-    width:100%;
+    
     height:fit-content;
+    
     border: solid red;
 }
 
-#skills {
+#skill {
     height:fit-content;
     border: solid green;
+}
+
+
+
+#exp {
+    height:fit-content;
+    border:solid blue;
+}
+
+#resume {
+    border:solid orange;
+    height:fit-content;
 }
 
 #cards {
@@ -83,6 +97,6 @@ body {
     
 }
 
-#exp {
-    height:fit-content;
+#accordian {
+    border:solid red;
 }

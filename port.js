@@ -1,7 +1,7 @@
 // Function to handle the activation of nav links
 function setActiveLink(event) {
     // Prevent the default action of the link
-    event.preventDefault();
+    
 
     // Get all nav links
     const navLinks = document.querySelectorAll('.nav-link');

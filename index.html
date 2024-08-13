@@ -1,133 +1,233 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    
-    <!-- bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!-- custom css -->
-     <link rel="stylesheet" href="styles.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
   
-  <body>
-    <div class="container-fluid">
-        <div class="row justify-content-start">
-            
-            <!-- start left col -->
-            <div id="left" class="col-3 ">
-                <nav class="nav nav-pills flex-column text-center ">
-                    <div class="container-fluid">
-                        <div class="container-fluid">
-                            <a id="navtitle" class="navbar-brand " href="#">
-                            <img id="favicon" src="gs_favicon.png" alt="Logo" width="60" height="55" class="d-inline-block align-text-center">
-                            GS_Port
-                            </a>
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
 
-                            <a  class="nav-link active" aria-current="page" href="#">About Me</a>
-                            <a  class="nav-link " href="#">Skills</a>
-                            <a  class="nav-link " href="#">Resume</a>
-                            <a  class="nav-link " aria-disabled="true">Projects</a>
-                        </div>
-                    </div>                
-                </nav>
-            </div>
-            <!-- end left col -->
+  <!-- custom css -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+  
+<body>
+  <div class="container-fluid">
+    <div class="row justify-content-start">  
+      <!-- start left col -->
+      <div id="left" class="col-3 ">
+        <nav class="nav nav-pills flex-column text-center ">
+          <div class="container-fluid">
+            <a id="navtitle" class="navbar-brand " href="#">
+              <img id="favicon" src="gs_favicon.png" alt="Logo" width="60" height="55" class="d-inline-block align-text-center">
+              GS_Port
+            </a>
 
-            <!-- start right col -->
-        <div id="right" class="col ">
-            <div id="about-me" class="container-fluid bg-light">
-                <h1>About me</h1>          
-                <p>some text about some paragraphs</p>
-                <p>resume stuff and skills lists</p> 
-            </div>
-            
-            <div id="skills" class="container-fluid">
-                <h1>Skills</h1>
-                <p>figure out how to display my skills nicely</p>
-                <h4>CAD</h4>
-                <h4>Simulation</h4>
-                <h4>Software</h4>
-                <h4>Fabrication</h4>
-                <h4>Tools</h4>
-                <h4>Other Skills: </h4>
-            </div>
-            
-            <div id="exp" class="container-fluid">
-                <h1>Experience</h1>
-                <p>
-                    stuff about my experience can go here
+            <a  class="nav-link active" href="#about">About Me</a>
+            <a  class="nav-link" href="#skill">Skills</a>
+            <a  class="nav-link" href="#exp">Experience</a>
+            <a  class="nav-link" href="#resume">Resume</a>
+            <a  class="nav-link" href="#project">Projects</a> 
+          </div>                      
+        </nav>
+      </div>
+      <!-- end left col -->
 
-                </p>
-            </div>
-            
+      <!-- start right col -->
+      <div id="right" class="col "> 
+        <section id="about">
+          <div id="about-me" class="container-fluid bg-light">
+            <h1>About me</h1>          
+            <p>some text about some paragraphs</p>
+            <p>resume stuff and skills lists</p> 
+          </div> 
+        </section>
 
-
-
-            <!-- start of flex container -->
-                <div id="cards" class="container-fluid  ">
-                    <h1>Projects</h1>
-                    <div class="d-flex flex-row mb-3">
-                        <!-- card 1 -->
-                        <div class="p-2">
-                            <div class="card" style="width: 18rem;">
-                                <img id="cardimg1" src="img/StewartPlat.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Stewart Platform</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- card 2 -->
-                        <div class="p-2">
-                            <div class="card" style="width: 18rem;">
-                                <img id="cardimg2" src="img/aspire6.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">ASPiRe</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>           
-                        </div>
-
-                        <!-- card 3 -->
-                        <div class="p-2">
-                            <div class="card" style="width: 18rem;">
-                                <img  id="cardimg3" src="img/rob6_copy.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Personal Projects</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>       
-                        </div>
-                    </div>
+        <section id="skill">
+          <div id="skill" class="container-fluid">
+            <h1>Skills</h1>
+            <p>get icons for the following things and add to svg folder</p>
+            <p>maybe do dropdowns for each category?</p>
+              
+            <!-- start accordion -->
+            <div class="accordion" id="accordionExample">
+              <!-- start item 1  -->
+              <div class="accordion-item">  
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    This is the first item's accordion body.It is shown by default
+                  </div>
                 </div>
-            <!-- end of flex container -->
+              </div> 
+              <!-- end item 1 -->
+
+              <!-- start item 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    classes that we use to style each element. These classes TML 
+                  </div>
+                </div>
+              </div>
+              <!-- end item 2 -->
+
+              <!-- end item 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample" >
+                  <div class="accordion-body">
+                    plu use to style each element. These classes 
+                  </div>
+                </div>
+              </div>
+              <!-- end item 3 -->
             </div>
-        </div>
-    </div>   
-  
-      
-    
-      
-    
-    
+            <!-- end accordion -->
+            <br>
 
+            <div class="container text-left">
+              <div class="row align-items-start">
+                <!-- start col 1 -->
+                <div class="col">
+                  <h4>CAD</h4>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> onshape <br>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> Siemens Nx <br>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> Fusion 360 <br>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> Autodesk Inventor <br>
+                    <br>
+                  <h4>Simulation</h4>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> StarCCM <br>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> Simulink <br>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> Simscape Multibody <br>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> LTSpice <br>
+                    <br>
+                  <h4>Software</h4>
+                      <input type="checkbox" name="fsdfs" id="sdfsf"> MS Office <br>
+                      <input type="checkbox" name="fsdfs" id="sdfsf"> Google Suit <br>
+                      <input type="checkbox" name="fsdfs" id="sdfsf"> Labview <br>
+                      <input type="checkbox" name="fsdfs" id="sdfsf"> Matlab <br>
+                      <br>
+                </div> 
+                <!-- end col 1 -->
 
+                <!-- start col 2 -->
+                <div class="col">
+                  <h4>Fabrication and Hardware</h4>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> 3d printing <br>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> cnc machining <br>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> pcb design <br>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> machine building <br>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> soldering <br>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> oscilloscope <br>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> power supply <br>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> function generator <br>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> microprosessors(arduino, myrio) <br>
+                    <br>
+                  <h4>Programming</h4>
+                      <input type="checkbox" name="fsdfs" id="sdfsf"> HTML <br>
+                      <input type="checkbox" name="fsdfs" id="sdfsf"> CSS <br>
+                      <input type="checkbox" name="fsdfs" id="sdfsf"> Bootstrap <br>
+                      <input type="checkbox" name="fsdfs" id="sdfsf"> Python <br>
+                      <input type="checkbox" name="fsdfs" id="sdfsf"> Arduino <br>
+                      <br>
+                </div>
+                <!-- end col 2 -->
 
-    <!-- bootstrap javascript links -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+                <!-- start col 3 -->
+                <div class="col">
+                  <h4>3D Modeling </h4>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> Blender <br>
+                    <input type="checkbox" name="fsdfs" id="sdfsf"> Maya <br>
+                    <br>
+                </div>
+                <!-- end col 3 -->
+              </div>
+            </div>            
+          </div>
+        </section>
+          
+        <section id="exp">
+          <div id="exp" class="container-fluid">
+            <h1>Experience</h1>
+            <p>
+                stuff about my experience can go here
+            </p>
+          </div>
+        </section>
 
-     <!-- custom javascript file -->
-      <script src="port.js"></script>
-  </body>
+        <section id="resume">
+          <div id="resume" class="container-fluid">
+            <h1>Resume </h1>
+            <p> stuff about my resume can go here</p>           
+          </div>
+        </section>
+              
+
+        <section id="project">
+          <div id="cards" class="container-fluid  ">   
+            <h1>Projects</h1>
+            <div class="d-flex flex-row mb-3">
+              <!-- card 1 -->
+              <div class="p-2">
+                <div class="card" style="width: 18rem;">
+                  <img id="cardimg1" src="img/StewartPlat.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Stewart Platform</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 2 -->
+              <div class="p-2">
+                <div class="card" style="width: 18rem;">
+                  <img id="cardimg2" src="img/aspire6.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">ASPiRe</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>           
+              </div>
+
+              <!-- card 3 -->
+              <div class="p-2">
+                <div class="card" style="width: 18rem;">
+                  <img  id="cardimg3" src="img/rob6_copy.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Personal Projects</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>       
+              </div>
+            </div>
+          </div>
+        </section>  
+      </div>
+    </div>
+  </div>   
+
+  <!-- bootstrap javascript link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- custom javascript file -->
+  <script src="port.js"></script>
+</body>
 </html>
