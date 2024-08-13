@@ -27,20 +27,24 @@ body {
  #left {
     background: var(--bs-dark);
     color: white;
+    width:20%;
  }
 
  #right {
     background: var(--bs-secondary-bg);
     padding:0px;
+    width:80%;
  }
 
 #favicon {
     margin: 5px;
     margin-top:10px;
+    border-radius: 5px;
 }
 
 #navtitle {
     font-size: 27px;
+    
 }
 
 .nav-link {
@@ -60,4 +64,25 @@ body {
 
 #cardimg3 {
     height:190px;
+}
+
+#about-me {
+    width:100%;
+    height:fit-content;
+    border: solid red;
+}
+
+#skills {
+    height:fit-content;
+    border: solid green;
+}
+
+#cards {
+    border:solid purple;
+    height:fit-content;
+    
+}
+
+#exp {
+    height:fit-content;
 }
