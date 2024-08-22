@@ -116,9 +116,14 @@ html {
     }
 
     .card {
-        width: 100px; /* Reduce card size on smaller screens */
-        height: 260px;
+        width: 120px; /* Reduce card size on smaller screens */
+        height: 180px;
     }
+
+     .row {
+        justify-content: center; /* Center cards horizontally */
+    }
+    
 
     #cardimg1, #cardimg3 {
         transform: scale(0.6); /* Adjust image scaling */
@@ -132,10 +137,7 @@ html {
         font-size: 20px; /* Smaller font size for titles */
     }
 
-    .card {
-        width: 100px;
-        height: 140px;
-    }
+   
 
     #cardimg1, #cardimg3 {
         transform: scale(0.5); /* Further reduce image scaling */
