@@ -27,9 +27,10 @@ html {
 #right {
     background: var(--bs-secondary-bg);
     padding: 0;
+    margin-top:96px;
     
-    margin-left: 20%; /* Leave space for the fixed sidebar */
-    width: 80%;
+    /* Leave space for the fixed sidebar */
+    width: 100%;
 }
 
 #favicon {
@@ -37,6 +38,12 @@ html {
     margin-top: 10px;
     border-radius: 5px;
 }
+
+#navbar {
+    position:fixed;
+    z-index: 5;
+}
+
 
 #navtitle {
     font-size: 27px;   
@@ -96,4 +103,51 @@ html {
 
 #cardimg2{
     padding-bottom: 5px;
+}
+
+
+
+
+/* Adjust for small screens */
+@media (max-width: 768px) {
+    #right {
+        width: 100%; /* Make content full width */
+        margin-top:112px;
+    }
+
+    .card {
+        width: 100px; /* Reduce card size on smaller screens */
+        height: 260px;
+    }
+
+    #cardimg1, #cardimg3 {
+        transform: scale(0.6); /* Adjust image scaling */
+    }
+
+    #about-me {
+        margin-top:10px;
+    }
+
+    #navtitle {
+        font-size: 20px; /* Smaller font size for titles */
+    }
+
+    .card {
+        width: 100px;
+        height: 140px;
+    }
+
+    #cardimg1, #cardimg3 {
+        transform: scale(0.5); /* Further reduce image scaling */
+    }
+
+    .nav-link {
+        font-size: 14px; /* Smaller font for nav links */
+    }
+
+    #projects-section {
+        /* Add your custom styles here */
+        flex-direction: column !important;
+        align-items: center;
+    }
 }

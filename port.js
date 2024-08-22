@@ -18,3 +18,40 @@ function setActiveLink(event) {
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', setActiveLink);
 });
+
+//scroll to right position on page
+document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.querySelector('.navbar');
+    const navbarHeight = navbar.offsetHeight;
+    const navbarCollapse = new bootstrap.Collapse(document.querySelector('#navbarNav'), {
+        toggle: false
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                const customOffset = 10; // Adjust this value for additional space
+                const offset = navbarHeight + customOffset; // Combine navbar height and custom offset
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+
+                // Collapse the navbar
+                if (navbarCollapse._isShown()) {
+                    navbarCollapse.hide();
+                }
+            }
+        });
+    });
+});
+
+
+  
