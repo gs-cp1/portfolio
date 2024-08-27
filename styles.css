@@ -99,9 +99,25 @@ html {
 #about-me {
     margin-top: 20px;
 }
+#project3 {
+    width:fit-content;
+    height:fit-content;
+}
+.citem {
+    width:500px;
+    margin-left:20%;
+    margin-top:10px;
+    margin-bottom:20px;
 
+    
+}
 
-
+.carousel-inner {
+    display:flex ;
+    align-content: center;
+   
+    
+}
 /* Adjust for small screens */
 @media (max-width: 768px) {
     #right {
@@ -141,9 +157,7 @@ html {
         font-size: 14px; /* Smaller font for nav links */
     }
 
-    #projects-section {
-        /* Add your custom styles here */
-        flex-direction: column !important;
-        align-items: center;
-    }
+  
+
+   
 }
