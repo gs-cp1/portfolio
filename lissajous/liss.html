@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lissajous Curve Generator</title>
+    <link rel="stylesheet" href="liss_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lissajous Curve Generator</h1>
+        <div class="main-content">
+            <canvas id="oscilloscope" width="800" height="600"></canvas>
+            <div class="controls">
+                <div class="control-group">
+                    <label for="freqX">Frequency X: <span id="freqXValue" class="slider-value">1.0</span></label>
+                    <input type="range" id="freqX" min="1" max="10" step="0.1" value="1">
+                    <button id="freqXDecrease">-</button>
+                    <button id="freqXIncrease">+</button>
+                </div>
+
+                <div class="control-group">
+                    <label for="freqY">Frequency Y: <span id="freqYValue" class="slider-value">2.0</span></label>
+                    <input type="range" id="freqY" min="1" max="10" step="0.1" value="2">
+                    <button id="freqYDecrease">-</button>
+                    <button id="freqYIncrease">+</button>
+                </div>
+
+                <div class="control-group">
+                    <label for="phaseShiftX">Phase Shift X: <span id="phaseShiftXValue" class="slider-value">0.0</span></label>
+                    <input type="range" id="phaseShiftX" min="0" max="6.28" step="0.1" value="0">
+                    <button id="phaseXDecrease">-</button>
+                    <button id="phaseXIncrease">+</button>
+                </div>
+
+                <div class="control-group">
+                    <label for="phaseShiftY">Phase Shift Y: <span id="phaseShiftYValue" class="slider-value">0.0</span></label>
+                    <input type="range" id="phaseShiftY" min="0" max="6.28" step="0.1" value="0">
+                    <button id="phaseYDecrease">-</button>
+                    <button id="phaseYIncrease">+</button>
+                </div>
+                
+
+                <div class="control-group">
+                    <button id="toggleRotation">Start Rotation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="liss_script.js"></script>
+</body>
+</html>
