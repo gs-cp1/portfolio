@@ -1,5 +1,13 @@
+:root {
+    --bgcolor: #a49a91;
+    --beige1: #b5b2a2;
+    --beige2:  #bbb5a6;
+    --white: #ffffff;
+    
+  }
+
 body {
-    background-color: #a49a91;
+    background-color: var(--bgcolor);
     color: black;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
@@ -12,25 +20,25 @@ body {
 .container {
     text-align: center;
     padding: 20px;
-    border: 10px solid #b5b2a2;
+    border: 10px solid var(--beige1);
     border-radius: 10px;
-    background-color: #bbb5a6;
-    box-shadow: 0px 0px 10px 20px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
+    background-color: var(--beige2);
+    box-shadow: 0px 0px 38px 20px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 h1 {
     margin-bottom: 20px;
-    /* text-shadow: 0 0 5px gray; */
 }
 
+/* style oscilloscope 'screen' */
 canvas {
     background-color: #18b2bf;
     border: 2px solid #f7f8f6;
     border-radius: 10px;
-    box-shadow:0px 0px 50px 12px black inset ;
+    box-shadow:0px 0px 50px 12px black inset ; /*black vingette around screen*/
 }
 
+/* style controls */
 .controls {
     margin-top: 20px;
     display: flex;
@@ -50,37 +58,36 @@ canvas {
     margin-right: 10px;
     width: 250px;
     text-align: right;
-    /* text-shadow: 0 0 5px rgba(0, 255, 0, 0.7); */
     font-size: 20px;
     font-weight: bold;
 }
 
+/* style sliders */
 input[type="range"] {
     width: 200px;
     margin: 0 10px;
-    background: #0f0;
-    border: 1px solid #0f0;
     border-radius: 5px;
 }
 
 input[type="range"]::-webkit-slider-thumb {
     background: #111;
-    border: 2px solid #0f0;
 }
 
+/* style control buttons */
 button {
     background-color: #111;
-    color: #0f0;
-    border: 1px solid #0f0;
+    color: white;
+    border: 1px solid white; 
     border-radius: 5px;
     padding: 5px 10px;
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
+/* control button hover action */
 button:hover {
     background-color: #333;
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    box-shadow: 0 0 10px gray;
 }
 
 button:active {
@@ -97,8 +104,8 @@ button:active {
 
     .container {
         padding: 20px;
-        max-width: 100%; /* Ensure container fits within screen width */
-        width: 100%; /* Ensure container uses full width available */
+        max-width: 100%;         /* Ensure container fits within screen width */
+        width: 100%;             /* Ensure container uses full width available */
         max-height: fit-content; /* Adjust max height for mobile screens */
         margin-top:20vh;
     }
@@ -108,41 +115,41 @@ button:active {
     }
 
     canvas {
-        width: 100%; /* Full width on small screens */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%;       /* Full width on small screens */
+        height: auto;      /* Maintain aspect ratio */
         max-height: 300px; /* Limit height to prevent overflow */
     }
 
     .controls {
         flex-direction: column; /* Stack controls vertically */
-        align-items: stretch; /* Stretch controls to full width */
-        gap: 10px; /* Reduce gap between controls */
+        align-items: stretch;   /* Stretch controls to full width */
+        gap: 10px;              /* Reduce gap between controls */
     }
 
     .control-group {
         flex-direction: column; /* Stack elements vertically */
-        align-items: stretch; /* Stretch to full width */
+        align-items: stretch;   /* Stretch to full width */
     }
 
     .control-group label {
         margin-bottom: 5px; /* Adjust margin for better spacing */
         text-align: center; /* Center align text */
-        width: 100%; /* Full width for labels */
+        width: 100%;        /* Full width for labels */
     }
 
     input[type="range"] {
-        width: 100%; /* Full width for range sliders */
+        width: 100%;     /* Full width for range sliders */
         max-width: 100%; /* Ensure sliders do not exceed container width */
     }
 
     input[type="number"] {
-        width: 100%; /* Full width for number inputs */
-        max-width: 100%; /* Ensure inputs do not exceed container width */
+        width: 100%;            /* Full width for number inputs */
+        max-width: 100%;        /* Ensure inputs do not exceed container width */
         box-sizing: border-box; /* Include padding and border in width */
     }
 
     button {
-        width: 100%; /* Full width buttons for better touch targets */
+        width: 100%;     /* Full width buttons for better touch targets */
         max-width: 100%; /* Ensure buttons do not exceed container width */
     }
 }

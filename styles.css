@@ -1,7 +1,7 @@
 html, body {
     min-height: 100vh; 
     min-height: -webkit-fill-available;
-    font-family: 'Catamaran', sans-serif; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -114,7 +114,6 @@ html, body {
         justify-content: center; /* Center cards horizontally */
     }
     
-
     #cardimg1, #cardimg3 {
         transform: scale(0.6); /* Adjust image scaling */
     }
@@ -126,8 +125,6 @@ html, body {
     #navtitle {
         font-size: 20px; /* Smaller font size for titles */
     }
-
-   
 
     #cardimg1, #cardimg3 {
         transform: scale(0.5); /* Further reduce image scaling */
