@@ -106,8 +106,8 @@ html, body {
     }
 
     .card {
-        width: 120px; /* Reduce card size on smaller screens */
-        height: 180px;
+        width: 135px; /* Reduce card size on smaller screens */
+        height: 200px;
     }
 
      .row {
