@@ -47,11 +47,31 @@ html, body {
     height: fit-content;
 }
 
+/* Accordion Styling */
 .accordion-item {
     margin-top: 10px;
-    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    overflow:hidden;
+    /* border:solid red; */
 }
+
+.accordion-header {
+    border-radius:10px;
+    text-decoration: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+.accordion-button:not(.collapsed) {
+background-color: transparent;
+color: inherit;
+/* text-decoration:; add underline if wanted*/
+}
+
 
 .projectcard {
     /* border:solid red; */
