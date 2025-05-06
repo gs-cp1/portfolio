@@ -3,27 +3,30 @@
     --beige1: #b5b2a2;
     --beige2:  #bbb5a6;
     --white: #ffffff;
-    
   }
 
 body {
     background-color: var(--bgcolor);
-    color: black;
     font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    justify-content: center;
+    display:flex;
+    justify-content:center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    border:solid red;
+    margin:0;
+    height:100vh;
+    overflow:hidden;
 }
 
 .container {
     text-align: center;
-    padding: 20px;
     border: 10px solid var(--beige1);
     border-radius: 10px;
     background-color: var(--beige2);
     box-shadow: 0px 0px 38px 20px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* width:1050px; */
+    width:80%;
+    height:75%;
+    border:solid green;
 }
 
 h1 {
@@ -36,6 +39,8 @@ canvas {
     border: 2px solid #f7f8f6;
     border-radius: 10px;
     box-shadow:0px 0px 50px 12px black inset ; /*black vingette around screen*/
+    width:90%;
+    border:solid orange;
 }
 
 /* style controls */
@@ -45,6 +50,8 @@ canvas {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    border:solid red;
+    width:fit-content;
 }
 
 .control-group {
@@ -62,6 +69,7 @@ canvas {
     font-weight: bold;
 }
 
+
 /* style sliders */
 input[type="range"] {
     width: 200px;
@@ -69,9 +77,6 @@ input[type="range"] {
     border-radius: 5px;
 }
 
-input[type="range"]::-webkit-slider-thumb {
-    background: #111;
-}
 
 /* style control buttons */
 button {
@@ -95,73 +100,21 @@ button:active {
 }
 
 
-
-/* Responsive adjustments for screens 600px wide or less */
-@media (max-width: 880px) {
-    body {
-        padding: 10px; /* Add padding around the edges */
-    }
-
-    .container {
-        padding: 20px;
-        max-width: 100%;         /* Ensure container fits within screen width */
-        width: 100%;             /* Ensure container uses full width available */
-        max-height: fit-content; /* Adjust max height for mobile screens */
-        margin-top:20vh;
-    }
-
-    h1 {
-        font-size: 1.5em; /* Make font size smaller for smaller screens */
-    }
-
-    canvas {
-        width: 100%;       /* Full width on small screens */
-        height: auto;      /* Maintain aspect ratio */
-        max-height: 300px; /* Limit height to prevent overflow */
-    }
-
-    .controls {
-        flex-direction: column; /* Stack controls vertically */
-        align-items: stretch;   /* Stretch controls to full width */
-        gap: 10px;              /* Reduce gap between controls */
-    }
-
-    .control-group {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: stretch;   /* Stretch to full width */
-    }
-
-    .control-group label {
-        margin-bottom: 5px; /* Adjust margin for better spacing */
-        text-align: center; /* Center align text */
-        width: 100%;        /* Full width for labels */
-    }
-
-    input[type="range"] {
-        width: 100%;     /* Full width for range sliders */
-        max-width: 100%; /* Ensure sliders do not exceed container width */
-    }
-
-    input[type="number"] {
-        width: 100%;            /* Full width for number inputs */
-        max-width: 100%;        /* Ensure inputs do not exceed container width */
-        box-sizing: border-box; /* Include padding and border in width */
-    }
-
-    button {
-        width: 100%;     /* Full width buttons for better touch targets */
-        max-width: 100%; /* Ensure buttons do not exceed container width */
-    }
+#full {
+    width:95%;
+    height:75%;
+    display: flex;
+    flex-direction: row;
+    border:solid purple;
+    align-items: center;
+    margin:auto;
 }
 
-@media (max-width: 500px) {
-    .container {
-        margin-top:20vh;
-    }
-}
 
-@media (max-height: 900px) {
+
+@media screen and (min-width: 1925px) {
     .container {
-        margin-top:30vh;
+        width:70%;
+        height:60%;
     }
-}
+  }
