@@ -164,17 +164,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // rotation button
     toggleRotationButton.addEventListener('click', () => {
-        rotating = !rotating;
-        if (rotating) {
-            toggleRotationButton.textContent = 'Stop Rotation';
-            startRotation();
-        } else {
-            toggleRotationButton.textContent = 'Start Rotation';
-            cancelAnimationFrame(animationFrameId);
-        }
-    });
+    rotating = !rotating;
+    
+    if (rotating) {
+        toggleRotationButton.textContent = 'Stop Rotation';
+
+        // Add rubbery press shadow and scale for active look
+        toggleRotationButton.classList.add(
+            'shadow-[inset_-2px_-2px_4px_#ffffff,inset_2px_2px_4px_#b5b7ba,0_4px_6px_rgba(0,0,0,0.1)]',
+            'scale-98', // Slightly scale down to simulate the button being pressed
+            'active:shadow-[inset_0_0_10px_#ffffff,inset_0_0_15px_#b5b7ba]' // Deeper shadows when active
+        );
+
+        // Remove the default shadow for a more dynamic effect
+        toggleRotationButton.classList.remove(
+            'shadow-[inset_2px_2px_4px_#ffffff,inset_4px_-4px_7px_#b5b7ba]'
+        );
+
+        startRotation();
+    } else {
+        toggleRotationButton.textContent = 'Start Rotation';
+
+        // Add default shadow when untoggled
+        toggleRotationButton.classList.add(
+            'shadow-[inset_2px_2px_4px_#ffffff,inset_4px_-4px_7px_#b5b7ba]'
+        );
+
+        // Remove rubbery effect (scaling) when untoggled
+        toggleRotationButton.classList.remove('scale-98');
+
+        cancelAnimationFrame(animationFrameId);
+    }
+});
 
     // call functions to draw grid and curve
     drawGrid();
     drawLissajous();
 });
+

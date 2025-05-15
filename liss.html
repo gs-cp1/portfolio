@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lissajous Curve Generator</title>
     <link rel="stylesheet" href="liss_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   
 </head>
-<body>
-    <div class="container">
+<body class="bg-[var(--bgcolor)] font-['Courier_New',Courier,monospace] flex justify-center items-center h-screen overflow-hidden m-0" >
+    <div class="oscilloscope_body">
         <h1>Lissajous Curve Generator</h1>
-        <div id="full">
+        <div id="canvasContainer">
             <div>
                 <canvas id="oscilloscope" width="800" height="600" ></canvas>
             </div>
@@ -17,29 +19,30 @@
                 <div class="control-group">
                     <label for="freqX">Frequency X: <span id="freqXValue" class="slider-value">1.0</span></label>
                     <input type="range" id="freqX" min="1" max="10" step="0.1" value="1">
-                    <button id="freqXDecrease">-</button>
-                    <button id="freqXIncrease">+</button>
+                    <button id="freqXDecrease" class="control-button">-</button>
+                    <button id="freqXIncrease" class="control-button">+</button>
                 </div>
                 <div class="control-group">
                     <label for="freqY">Frequency Y: <span id="freqYValue" class="slider-value">2.0</span></label>
                     <input type="range" id="freqY" min="1" max="10" step="0.1" value="2">
-                    <button id="freqYDecrease">-</button>
-                    <button id="freqYIncrease">+</button>
+                    <button id="freqYDecrease"class="control-button">-</button>
+                    <button id="freqYIncrease" class="control-button">+</button>
                 </div>
                 <div class="control-group">
                     <label for="phaseShiftX">Phase Shift X: <span id="phaseShiftXValue" class="slider-value">0.0</span></label>
                     <input type="range" id="phaseShiftX" min="0" max="6.28" step="0.1" value="0">
-                    <button id="phaseXDecrease">-</button>
-                    <button id="phaseXIncrease">+</button>
+                    <button id="phaseXDecrease" class="control-button">-</button>
+                    <button id="phaseXIncrease" class="control-button">+</button>
                 </div>
                 <div class="control-group">
                     <label for="phaseShiftY">Phase Shift Y: <span id="phaseShiftYValue" class="slider-value">0.0</span></label>
                     <input type="range" id="phaseShiftY" min="0" max="6.28" step="0.1" value="0">
-                    <button id="phaseYDecrease">-</button>
-                    <button id="phaseYIncrease">+</button>
+                    <button id="phaseYDecrease" class="control-button">-</button>
+                    <button id="phaseYIncrease" class="control-button">+</button>
                 </div>
                 <div class="control-group">
-                    <button id="toggleRotation">Start Rotation</button>
+                    <button id="toggleRotation" class="px-4 py-2 rounded-lg font-semibold text-gray-800 bg-gradient-to-tr from-[#f5f6f7] to-[#d0d2d4] shadow-[inset_2px_2px_4px_#ffffff,inset_4px_-4px_7px_#b5b7ba,0_4px_6px_rgba(0,0,0,0.1)] w-[170px] transition-all duration-400 ease-in-out
+                       "> Start Rotation </button>
                 </div>
             </div>
         </div>
@@ -47,3 +50,11 @@
     <script src="liss_script.js"></script>
 </body>
 </html>
+
+
+<!-- active:shadow-[inset_-2px_-2px_4px_#ffffff,inset_2px_2px_4px_#b5b7ba] -->
+
+<!--  -->
+
+
+<!-- shadow-[inset_2px_2px_4px_#ffffff,inset_4px_-4px_7px_#b5b7ba] -->

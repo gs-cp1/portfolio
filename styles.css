@@ -1,5 +1,5 @@
 html, body {
-    min-height: 100vh; 
+    min-height: 100vh;
     min-height: -webkit-fill-available;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
@@ -27,7 +27,7 @@ html, body {
 }
 
 #navtitle {
-    font-size: 27px;   
+    font-size: 27px;
 }
 
 .nav-link {
@@ -64,7 +64,7 @@ html, body {
 .accordion-button:focus {
     box-shadow: none;
     outline: none;
-  }
+}
 
 .accordion-button:not(.collapsed) {
 background-color: transparent;
@@ -74,26 +74,23 @@ color: inherit;
 
 
 .projectcard {
-    border:solid red;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width:80%;
     margin:auto;
     height:fit-content;
-    
 }
 
 .iconcard {
-    margin: 10px; 
+    margin: 10px;
 }
 
 .iconbox {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
-    
 }
 
 .cardshape {
-    width: 135px; 
+    width: 135px;
     height: 190px;
 }
 
@@ -105,7 +102,7 @@ color: inherit;
     transform: scale(0.8); /* Corrected scale */
 }
 
-.card-body { 
+.card-body {
     padding-top: 0;
 }
 
@@ -120,14 +117,11 @@ color: inherit;
 .citem {
     margin-top:20px;
     margin-bottom:20px;
-} 
-
-.cardtext {
-  text-align: left;  
 }
 
-
-
+.cardtext {
+  text-align: left;
+}
 
 
 /* Adjust for small screens */
@@ -145,7 +139,7 @@ color: inherit;
      .row {
         justify-content: center; /* Center cards horizontally */
     }
-    
+
     #cardimg1, #cardimg3 {
         transform: scale(0.6); /* Adjust image scaling */
     }

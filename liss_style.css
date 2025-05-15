@@ -5,19 +5,7 @@
     --white: #ffffff;
   }
 
-body {
-    background-color: var(--bgcolor);
-    font-family: 'Courier New', Courier, monospace;
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    border:solid red;
-    margin:0;
-    height:100vh;
-    overflow:hidden;
-}
-
-.container {
+.oscilloscope_body {
     text-align: center;
     border: 10px solid var(--beige1);
     border-radius: 10px;
@@ -25,40 +13,41 @@ body {
     box-shadow: 0px 0px 38px 20px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* width:1050px; */
     width:80%;
-    height:75%;
+    height:60%;
     border:solid green;
+
 }
 
 h1 {
     margin-bottom: 20px;
 }
 
-/* style oscilloscope 'screen' */
+/* style oscilloscope screen */
 canvas {
     background-color: #18b2bf;
     border: 2px solid #f7f8f6;
     border-radius: 10px;
     box-shadow:0px 0px 50px 12px black inset ; /*black vingette around screen*/
-    width:90%;
-    border:solid orange;
+    width:80%;
+    /* border:solid orange; */
 }
 
-/* style controls */
+/* style all controls */
 .controls {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    border:solid red;
-    width:fit-content;
+    border:solid orange;
 }
 
+/* style buttons, slider, and labels */
 .control-group {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     gap: 10px;
+
 }
 
 .control-group label {
@@ -69,7 +58,6 @@ canvas {
     font-weight: bold;
 }
 
-
 /* style sliders */
 input[type="range"] {
     width: 200px;
@@ -77,44 +65,49 @@ input[type="range"] {
     border-radius: 5px;
 }
 
-
 /* style control buttons */
-button {
-    background-color: #111;
-    color: white;
-    border: 1px solid white; 
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
+.control-button {
+    padding: 0.5rem 1rem; /* px-4 py-2 */
+    border-radius: 0.5rem; /* rounded-lg */
+    font-weight: 600; /* font-semibold */
+    color: #1f2937; /* text-gray-800 */
+    background-image: linear-gradient(to top right, #f5f6f7, #d0d2d4); /* bg-gradient-to-tr */
+    box-shadow:
+      inset 2px 2px 4px #ffffff,
+      inset 4px -4px 7px #b5b7ba,
+      0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+    width: 40px; /* w-[40px] */
+    transition: all 400ms ease-in-out; /* transition */
+  }
 
-/* control button hover action */
-button:hover {
-    background-color: #333;
-    box-shadow: 0 0 10px gray;
-}
-
-button:active {
-    background-color: #555;
-}
-
-
-#full {
-    width:95%;
-    height:75%;
+#canvasContainer {
+    border:solid red;
     display: flex;
     flex-direction: row;
-    border:solid purple;
+    /* border:solid purple; */
     align-items: center;
     margin:auto;
 }
 
-
-
+/* MEDIA QUERY'S */
 @media screen and (min-width: 1925px) {
     .container {
         width:70%;
         height:60%;
     }
-  }
+}
+
+@media screen and (max-width: 1000px) {
+    #canvasContainer {
+        flex-direction: column;
+    }
+}
+
+/* For Iphone */
+@media screen and (max-width: 400px) {
+
+}
+
+
+
+
