@@ -1,724 +1,720 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GS Portfolio</title>
-
-    <!-- bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <!-- custom css -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-
-<body>
-    <div class="container-fluid">
-        <div class="row justify-content-start">
-            <!-- START NAVBAR -->
-            <nav id="navbar" class="navbar navbar-expand-sm navbar-light bg-light p-3">
-                <a class="navbar-brand" href="#">
-                    <img id="favicon" src="gs_favicon.png" alt="Logo" width="60" height="55"
-                    class="d-inline-block align-text-center">
-                    Greg Seoylemezian
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#about-me">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skill">Skills</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                        <a class="nav-link" href="#exp">Experience</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#project">Projects</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <!-- END NAVBAR -->
-
-            <!-- START CONTENT -->
-            <div id="right" class="col ">
-                <section id="about">
-                    <div id="about-me" class="container-fluid">
-                        <h1>About Me</h1>
-                        <p>
-                        I am a mechanical engineering graduate with a passion for problem-solving and user-centered design. I
-                        enjoy turning ideas into reality, whether it's through engineering, programming, or 3D modeling. My
-                        experience ranges from working on robotics and simulations to creating basic interactive web applications.
-                        I'm always eager to learn new things and take my skill set to the next level.
-                        </p>
-                        <h4>Personal Interests</h4>
-                        <p>Outside of engineering I enjoy playing laccrosse, teaching myself piano and guitar, snowboarding and
-                        spending time in my lab tinkering with electronics and exploring new projects.</p>
-                        <h4>Values</h4>
-                        <p>I believe that collaboration, user feedback, and learning from setbacks are crucial in the design
-                        process. </p>
-                    </div>
-                </section>
-                <hr>
-                <br>
-                <section id="skill">
-                <div id="skill" class="container-fluid">
-                    <h1>Skills</h1>
-                    <!-- START ACCORDION -->
-                    <div class="accordion" id="accordionExample">
-                    <!-- START CAD  -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                <strong>CAD</strong>
-                            </button>
-                        </h2>
-                        <!-- START COLLAPSE ONE -->
-                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <!--START ACCORDION BODY-->
-                            <div class="accordion-body ">
-                                <!--START ROW-->
-                                <div class="row">
-                                    <!-- START CARDS -->
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg1" src="icons/onshape.png" class="card-img-top" alt="onshape logo">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">OnShape</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg1" src="icons/NX.svg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">Siemens NX</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg1" src="icons/fusion.png" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">Fusion 360</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg1" src="icons/Inventor.png" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">Autodesk Inventor</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END CARDS -->
-                                </div>
-                                <!--END ROW-->
-                            </div>
-                            <!--END ACCORDION BODY-->
-                        </div>
-                        <!-- END COLLAPSE ONE -->
-                    </div>
-                    <!-- END CAD -->
-
-                    <!-- START SIMULATION -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <strong>Simulation</strong>
-                            </button>
-                        </h2>
-                        <!-- START COLLAPSE TWO -->
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <!-- START ACCORDION BODY -->
-                            <div class="accordion-body">
-                                <!-- add show after collapse to show by default-->
-                                <!-- START ROW -->
-                                <div class="row">
-                                    <!-- START CARDS -->
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg1" src="icons/starccm.png" class="card-img-top" alt="onshape logo">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">StarCCM</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg1" src="icons/Simulink.png" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">Simulink</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg2" src="icons/simscape.jpg"
-                                                style="scale:100%; padding-top:20px; padding-bottom:33px" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">Simscape Multibody</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg1" src="icons/ltspice.png" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">LTspice</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END CARDS -->
-                                </div>
-                                <!-- END ROW -->
-                            </div>
-                            <!-- START ACCORDION BODY -->
-                        </div>
-                        <!-- END COLLAPSE TWO -->
-                    </div>
-                    <!-- END SIMULATION -->
-
-                    <!-- START SOFTWARE -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <strong>Software</strong>
-                            </button>
-                        </h2>
-                        <!-- START COLLAPSE THREE -->
-                        <div id="collapseThree" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
-                            <!-- START ACCORDION BODY -->
-                            <div class="accordion-body">
-                                <!-- START ROW -->
-                                <div class="row">
-                                    <!-- START CARDS -->
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg1" src="icons/MSoffice.svg" class="card-img-top" alt="onshape logo">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">MS Office</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg1" src="icons/google.svg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">Google Suit</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg1" src="icons//labview.svg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">NI LabView</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg3" src="icons/matlab.svg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">Matlab</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END CARDS -->
-                                </div>
-                                <!-- END ROW -->
-                            </div>
-                            <!-- END ACCORDION BODY -->
-                        </div>
-                        <!-- END COLLAPSE THREE -->
-                    </div>
-                    <!-- END SOFTWARE -->
-
-                    <!-- START FABRICATION -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                <strong>Fabrication</strong>
-                            </button>
-                        </h2>
-                        <!-- START COLLAPSE FOUR -->
-                        <div id="collapseFour" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
-                            <!-- START ACCORDION BODY -->
-                            <div class="accordion-body">
-                                <!-- START ROW -->
-                                <div class="row">
-                                    <!-- START CARDS -->
-                                    <!-- START FABRICATION CARD 1 -->
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg1" src="icons/3d-printer.svg" class="card-img-top" alt="onshape logo">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">3D Printing</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END FABRICATION CARD 1 -->
-                                    <!-- START FABRICATION CARD 2 -->
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg1" src="icons/machine-press.svg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">CNC Machining</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- START FABRICATION CARD 2 -->
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg1" src="icons/protoboard.svg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">PCB Design</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- START FABRICATION CARD 1 -->
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg3" src="icons/solder.svg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">Soldering</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- START FABRICATION CARD 1 -->
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg3" src="icons/oscilloscope.svg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">Oscillo-scope</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- START FABRICATION CARD 1 -->
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg3" src="icons/powerSupply.svg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">Power Supply</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- START FABRICATION CARD 1 -->
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg3" src="icons/waveform.svg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">Function Generator</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- START FABRICATION CARD 1 -->
-                                    <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                        <div class="iconbox">
-                                            <div class="card cardshape">
-                                                <img id="cardimg3" src="icons/arduino.svg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-center">Arduino</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END FABRICATION CARD 7 -->
-                                    <!-- END CARDS -->
-                                </div>
-                                <!-- END ROW -->
-                            </div>
-                            <!-- END ACCORDION BODY -->
-                        </div>
-                        <!-- END COLLAPSE FOUR -->
-                    </div>
-                    <!-- END FABRICATION -->
-
-                    <!-- START PROGRAMMING -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            <strong>Programming</strong>
-                        </button>
-                        </h2>
-                        <div id="collapseFive" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="row">
-                            <!-- START CARDS -->
-                            <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                <div class="iconbox">
-                                <div class="card cardshape">
-                                    <img id="cardimg1" src="icons/html.svg" class="card-img-top" alt="onshape logo">
-                                    <div class="card-body">
-                                    <h5 class="card-title text-center">HTML</h5>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                <div class="iconbox">
-                                <div class="card cardshape">
-                                    <img id="cardimg1" src="icons/css.svg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                    <h5 class="card-title text-center">CSS</h5>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                <div class="iconbox">
-                                <div class="card cardshape">
-                                    <img id="cardimg3" src="icons/javascript.svg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                    <h5 class="card-title text-center">Javascript</h5>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                <div class="iconbox">
-                                <div class="card cardshape">
-                                    <img id="cardimg1" src="icons/bootstrap.svg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                    <h5 class="card-title text-center">Bootstrap</h5>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                <div class="iconbox">
-                                <div class="card cardshape">
-                                    <img id="cardimg3" src="icons/python.svg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                    <h5 class="card-title text-center">Python</h5>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                <div class="iconbox">
-                                <div class="card cardshape">
-                                    <img id="cardimg3" src="icons/arduino-lang.svg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                    <h5 class="card-title text-center">Arduino</h5>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            <!-- END CARDS -->
-
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <!-- END PROGRAMMING -->
-
-                    <!-- START 3D MODELING -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                            <strong>3D Modeling</strong>
-                        </button>
-                        </h2>
-                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <!-- add show after collapse to show by default-->
-                            <div class="row">
-                            <!-- START CARDS -->
-                            <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                <div class="iconbox">
-                                <div class="card cardshape">
-                                    <img id="cardimg1" src="icons/blender.svg" class="card-img-top" alt="onshape logo">
-                                    <div class="card-body">
-                                    <h5 class="card-title text-center">Blender</h5>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
-                                <div class="iconbox">
-                                <div class="card cardshape">
-                                    <img id="cardimg1" src="icons/maya.svg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                    <h5 class="card-title text-center">Maya</h5>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-                            <!-- END CARDS -->
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <!-- END 3D MODELING -->
-                    <!-- END ACCORDION -->
-                    <br>
-                    </div>
-                </div>
-                </section>
-
-                <!-- <section id="exp">
-                <div id="exp" class="container-fluid">
-                    <h1>Experience</h1>
-                    <h4>Research Assistant</h4>
-                    <h6> <em>Hofstra University</em></h6>
-                    <p>
-                    <ul>
-                        <li>Designed and built a Three-Link Robot using an NI myRIO microcontroller and LabVIEW for real-time control </li>
-                        <li>Gained a practical understanding of how fabrication drawings need to be formatted and labeled </li>
-                        <li>Designed and built a Quadcopter using an NI myRIO microcontroller and LabView for real-time control </li>
-                        <li>Assisted Professor with care and organization of lab environment </li>
-                    </ul>
-                    </p>
-                </div>
-                </section> -->
-                <hr>
-                <br>
-
-
-                <section id="project">
-                <div id="cards" class="container-fluid">
-                    <h1>Projects</h1>
-                    <div id="projects-section" class="d-flex flex-column mb-3">
-
-                    <!-- proj 1 -->
-                    <div class="p-2">
-                        <div class="card mb-3 text-center smallproj projectcard">
-                        <div id="carouselExampleIndicators" class="carousel carousel-dark slide">
-                            <div class="carousel-indicators" >
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                            <div class="carousel-item active " >
-                                <img class="citem" src="img/Resized/StewartPlat(Small).jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="citem" src="img/Resized/StewartFull(Small).jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="citem" src="img/Resized/stewart(Small).jpg " class="d-block w-100" alt="...">
-                            </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="card-body cardtext">
-                            <h5 class="card-title"><strong>Stewart Platform</strong></h5>
-                            <p class="card-text">
-                            <ul>
-                            <li> Constructed a Stewart Platform, focusing on the design and assembly of the mechanical
-                                structure to achieve precise motion control</li>
-                            <li>Addressed challenges in alignment and stability to enhance overall performance and accuracy
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GS Portfolio</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Import Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+        <!-- Import GS Icon -->
+        <link rel="icon" href="img/favicon.png" type="image/x-icon">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Tailwind CSS CDN -->
+        
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row justify-content-start">
+                <!-- START NAVBAR -->
+                <nav id="navbar" class="navbar navbar-expand-sm navbar-light bg-light p-3">
+                    <a class="navbar-brand" href="#">
+                        <img id="favicon" src="gs_favicon.png" alt="Logo" width="60" height="55"
+                        class="d-inline-block align-text-center">
+                        Greg Seoylemezian
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#about-me">About Me</a>
                             </li>
-                            <li>Coded Arduino and Breadboarded all connectors and sensors to be able to read and command
-                                position</li>
-                            <li>Led a team of three in the construction of the Stewart Platform, coordinating efforts and
-                                managing tasks to achieve project goals efficiently </li>
-                            </ul>
-                            </p>
-                        </div>
-                        </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skill">Skills</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                            <a class="nav-link" href="#exp">Experience</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#project">Projects</a>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- end proj 1 -->
-                    <!-- proj 2 -->
-                    <div class="p-2">
-                        <div class="card mb-3 text-center smallproj projectcard">
-                        <div id="carouselExampleIndicators2" class="carousel carousel-dark slide">
-                            <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                            <div class="carousel-item active ">
-                                <img class="citem" src="img/Resized/aspire6(Small).jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="citem" src="img/Resized/aspire8(Small).jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="citem" src="img/Resized/aspire2(Small).jpg" class="d-block w-100" alt="...">
-                            </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="card-body cardtext">
-                            <h5 class="card-title"><strong>ASPiRe Program</strong></h5>
-                            <p class="card-text">
-                            <ul>
-                            <li>Designed and built a 3-link Robotic Arm (left) using an NI myRIO microcontroller and LabVIEW
-                                for real-time control</li>
-                            <ul>
-                                <li> Applied principles of mechanical engineering and robotics to achieve precise motion control
-                                </li>
-                                <li>Gained a practical understanding of how fabrication drawings need to be formatted and
-                                labeled</li>
-                            </ul>
+                </nav>
+                <!-- END NAVBAR -->
 
-                            <li>Constructed a quadcopter (right) with a custom base, enhancing stability and performance for
-                                educational demonstrations and future class use</li>
-                            <li>Culminated the ASPiRe program with a comprehensive presentation, showcasing project outcomes
-                                and engineering solutions to peers and faculty</li>
-                            </ul>
+                <!-- START CONTENT -->
+                <div id="right" class="col ">
+                    <section id="about">
+                        <div id="about-me" class="container-fluid">
+                            <h1>About Me</h1>
+                            <p>
+                            I am a mechanical engineering graduate with a passion for problem-solving and user-centered design. I
+                            enjoy turning ideas into reality, whether it's through engineering, programming, or 3D modeling. My
+                            experience ranges from working on robotics and simulations to creating basic interactive web applications.
+                            I'm always eager to learn new things and take my skill set to the next level.
                             </p>
+                            <h4>Personal Interests</h4>
+                            <p>Outside of engineering I enjoy playing laccrosse, teaching myself piano and guitar, snowboarding and
+                            spending time in my lab tinkering with electronics and exploring new projects.</p>
+                            <h4>Values</h4>
+                            <p>I believe that collaboration, user feedback, and learning from setbacks are crucial in the design
+                            process. </p>
                         </div>
+                    </section>
+                    <hr>
+                    <br>
+                    <section id="skill">
+                    <div id="skill" class="container-fluid">
+                        <h1>Skills</h1>
+                        <!-- START ACCORDION -->
+                        <div class="accordion" id="accordionExample">
+                        <!-- START CAD  -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <strong>CAD</strong>
+                                </button>
+                            </h2>
+                            <!-- START COLLAPSE ONE -->
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <!--START ACCORDION BODY-->
+                                <div class="accordion-body ">
+                                    <!--START ROW-->
+                                    <div class="row">
+                                        <!-- START CARDS -->
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg1" src="icons/onshape.png" class="card-img-top" alt="onshape logo">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">OnShape</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg1" src="icons/NX.svg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">Siemens NX</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg1" src="icons/fusion.png" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">Fusion 360</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg1" src="icons/Inventor.png" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">Autodesk Inventor</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END CARDS -->
+                                    </div>
+                                    <!--END ROW-->
+                                </div>
+                                <!--END ACCORDION BODY-->
+                            </div>
+                            <!-- END COLLAPSE ONE -->
+                        </div>
+                        <!-- END CAD -->
+
+                        <!-- START SIMULATION -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <strong>Simulation</strong>
+                                </button>
+                            </h2>
+                            <!-- START COLLAPSE TWO -->
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <!-- START ACCORDION BODY -->
+                                <div class="accordion-body">
+                                    <!-- add show after collapse to show by default-->
+                                    <!-- START ROW -->
+                                    <div class="row">
+                                        <!-- START CARDS -->
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg1" src="icons/starccm.png" class="card-img-top" alt="onshape logo">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">StarCCM</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg1" src="icons/Simulink.png" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">Simulink</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg2" src="icons/simscape.jpg"
+                                                    style="scale:100%; padding-top:20px; padding-bottom:33px" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">Simscape Multibody</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg1" src="icons/ltspice.png" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">LTspice</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END CARDS -->
+                                    </div>
+                                    <!-- END ROW -->
+                                </div>
+                                <!-- START ACCORDION BODY -->
+                            </div>
+                            <!-- END COLLAPSE TWO -->
+                        </div>
+                        <!-- END SIMULATION -->
+
+                        <!-- START SOFTWARE -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <strong>Software</strong>
+                                </button>
+                            </h2>
+                            <!-- START COLLAPSE THREE -->
+                            <div id="collapseThree" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                                <!-- START ACCORDION BODY -->
+                                <div class="accordion-body">
+                                    <!-- START ROW -->
+                                    <div class="row">
+                                        <!-- START CARDS -->
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg1" src="icons/MSoffice.svg" class="card-img-top" alt="onshape logo">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">MS Office</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg1" src="icons/google.svg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">Google Suit</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg1" src="icons//labview.svg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">NI LabView</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg3" src="icons/matlab.svg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">Matlab</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END CARDS -->
+                                    </div>
+                                    <!-- END ROW -->
+                                </div>
+                                <!-- END ACCORDION BODY -->
+                            </div>
+                            <!-- END COLLAPSE THREE -->
+                        </div>
+                        <!-- END SOFTWARE -->
+
+                        <!-- START FABRICATION -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <strong>Fabrication</strong>
+                                </button>
+                            </h2>
+                            <!-- START COLLAPSE FOUR -->
+                            <div id="collapseFour" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                                <!-- START ACCORDION BODY -->
+                                <div class="accordion-body">
+                                    <!-- START ROW -->
+                                    <div class="row">
+                                        <!-- START CARDS -->
+                                        <!-- START FABRICATION CARD 1 -->
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg1" src="icons/3d-printer.svg" class="card-img-top" alt="onshape logo">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">3D Printing</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END FABRICATION CARD 1 -->
+                                        <!-- START FABRICATION CARD 2 -->
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg1" src="icons/machine-press.svg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">CNC Machining</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- START FABRICATION CARD 2 -->
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg1" src="icons/protoboard.svg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">PCB Design</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- START FABRICATION CARD 1 -->
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg3" src="icons/solder.svg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">Soldering</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- START FABRICATION CARD 1 -->
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg3" src="icons/oscilloscope.svg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">Oscillo-scope</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- START FABRICATION CARD 1 -->
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg3" src="icons/powerSupply.svg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">Power Supply</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- START FABRICATION CARD 1 -->
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg3" src="icons/waveform.svg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">Function Generator</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- START FABRICATION CARD 1 -->
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg3" src="icons/arduino.svg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">Arduino</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END FABRICATION CARD 7 -->
+                                        <!-- END CARDS -->
+                                    </div>
+                                    <!-- END ROW -->
+                                </div>
+                                <!-- END ACCORDION BODY -->
+                            </div>
+                            <!-- END COLLAPSE FOUR -->
+                        </div>
+                        <!-- END FABRICATION -->
+
+                        <!-- START PROGRAMMING -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <strong>Programming</strong>
+                            </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row">
+                                <!-- START CARDS -->
+                                <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                    <div class="iconbox">
+                                    <div class="card cardshape">
+                                        <img id="cardimg1" src="icons/html.svg" class="card-img-top" alt="onshape logo">
+                                        <div class="card-body">
+                                        <h5 class="card-title text-center">HTML</h5>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                    <div class="iconbox">
+                                    <div class="card cardshape">
+                                        <img id="cardimg1" src="icons/css.svg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title text-center">CSS</h5>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                    <div class="iconbox">
+                                    <div class="card cardshape">
+                                        <img id="cardimg3" src="icons/javascript.svg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title text-center">Javascript</h5>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                    <div class="iconbox">
+                                    <div class="card cardshape">
+                                        <img id="cardimg1" src="icons/bootstrap.svg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title text-center">Bootstrap</h5>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                    <div class="iconbox">
+                                    <div class="card cardshape">
+                                        <img id="cardimg3" src="icons/python.svg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title text-center">Python</h5>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                    <div class="iconbox">
+                                    <div class="card cardshape">
+                                        <img id="cardimg3" src="icons/arduino-lang.svg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title text-center">Arduino</h5>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- END CARDS -->
+
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- END PROGRAMMING -->
+
+                        <!-- START 3D MODELING -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <strong>3D Modeling</strong>
+                            </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <!-- add show after collapse to show by default-->
+                                    <div class="row">
+                                        <!-- START CARDS -->
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg1" src="icons/blender.svg" class="card-img-top" alt="onshape logo">
+                                                    <div class="card-body">
+                                                    <h5 class="card-title text-center">Blender</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-1 p-1 text-white iconcard" style="width:fit-content ">
+                                            <div class="iconbox">
+                                                <div class="card cardshape">
+                                                    <img id="cardimg1" src="icons/maya.svg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                    <h5 class="card-title text-center">Maya</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END CARDS -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END 3D MODELING -->
+                        <!-- END ACCORDION -->
+                        <br>
                         </div>
                     </div>
-                    <!-- end proj 2 -->
-                    <!-- proj 3 -->
-                    <div class="p-2">
-                        <div class="card mb-3 text-center smallproj projectcard">
-                        <div id="carouselExampleIndicators3" class="carousel carousel-dark slide">
-                            <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
+                    </section>
+                    <!-- <section id="exp">
+                    <div id="exp" class="container-fluid">
+                        <h1>Experience</h1>
+                        <h4>Research Assistant</h4>
+                        <h6> <em>Hofstra University</em></h6>
+                        <p>
+                        <ul>
+                            <li>Designed and built a Three-Link Robot using an NI myRIO microcontroller and LabVIEW for real-time control </li>
+                            <li>Gained a practical understanding of how fabrication drawings need to be formatted and labeled </li>
+                            <li>Designed and built a Quadcopter using an NI myRIO microcontroller and LabView for real-time control </li>
+                            <li>Assisted Professor with care and organization of lab environment </li>
+                        </ul>
+                        </p>
+                    </div>
+                    </section> -->
+                    <hr>
+                    <br>
+                    <section id="project">
+                    <div id="cards" class="container-fluid">
+                        <h1>Projects</h1>
+                        <div id="projects-section" class="d-flex flex-column mb-3">
+
+                        <!-- proj 1 -->
+                        <div class="p-2">
+                            <div class="card mb-3 text-center smallproj projectcard">
+                            <div id="carouselExampleIndicators" class="carousel carousel-dark slide">
+                                <div class="carousel-indicators" >
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                <div class="carousel-item active " >
+                                    <img class="citem" src="img/Resized/StewartPlat(Small).jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="citem" src="img/Resized/StewartFull(Small).jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="citem" src="img/Resized/stewart(Small).jpg " class="d-block w-100" alt="...">
+                                </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                                </button>
                             </div>
-                            <div class="carousel-inner">
-                            <div class="carousel-item active ">
-                                <img class="citem" src="img/Resized/rob6(Small).jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <video class="citem" src="img/Resized/ac.mp4" controls width="740px" height="660px"
-                                type="video/mp4"></video>
-                            </div>
-                            <div class="carousel-item">
-                                <video class="citem" src="img/Resized/gripper.mov" controls height="660px"></video>
-                            </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
                             <div class="card-body cardtext">
-                                <h5 class="card-title"><strong>Personal Projects</strong></h5>
+                                <h5 class="card-title"><strong>Stewart Platform</strong></h5>
                                 <p class="card-text">
                                 <ul>
-                                <li>Gained hands-on experience with Dynamixel servo motors, enhancing understanding of their
-                                    applications in robotics</li>
-                                <li>Constructed a basic air conditioning system to demonstrate the principles of evaporative
-                                    cooling and its practical applications</li>
-                                <li>3D printed, assembled, and wired a small grabber, exploring its potential use in robotics
-                                    applications</li>
-                                <li>Spent time learning about Lissajous figures</li>
-                                <ul>
-                                    <li>
-                                    <a href="liss.html">Interactive Lissajous Figures Tool</a>
-                                    </li>
-                                </ul>
+                                <li> Constructed a Stewart Platform, focusing on the design and assembly of the mechanical
+                                    structure to achieve precise motion control</li>
+                                <li>Addressed challenges in alignment and stability to enhance overall performance and accuracy
+                                </li>
+                                <li>Coded Arduino and Breadboarded all connectors and sensors to be able to read and command
+                                    position</li>
+                                <li>Led a team of three in the construction of the Stewart Platform, coordinating efforts and
+                                    managing tasks to achieve project goals efficiently </li>
                                 </ul>
                                 </p>
                             </div>
                             </div>
                         </div>
-                        <!-- end proj 3 -->
-                        </div>
-                        <!-- end of cards -->
-                    </div>
-                    </section>
-                </div>
-        </div>
-    </div>
+                        <!-- end proj 1 -->
+                        <!-- proj 2 -->
+                        <div class="p-2">
+                            <div class="card mb-3 text-center smallproj projectcard">
+                            <div id="carouselExampleIndicators2" class="carousel carousel-dark slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                <div class="carousel-item active ">
+                                    <img class="citem" src="img/Resized/aspire6(Small).jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="citem" src="img/Resized/aspire8(Small).jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="citem" src="img/Resized/aspire2(Small).jpg" class="d-block w-100" alt="...">
+                                </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div class="card-body cardtext">
+                                <h5 class="card-title"><strong>ASPiRe Program</strong></h5>
+                                <p class="card-text">
+                                <ul>
+                                <li>Designed and built a 3-link Robotic Arm (left) using an NI myRIO microcontroller and LabVIEW
+                                    for real-time control</li>
+                                <ul>
+                                    <li> Applied principles of mechanical engineering and robotics to achieve precise motion control
+                                    </li>
+                                    <li>Gained a practical understanding of how fabrication drawings need to be formatted and
+                                    labeled</li>
+                                </ul>
 
-    <!-- bootstrap javascript link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- custom javascript file -->
-    <script src="port.js"></script>
-</body>
+                                <li>Constructed a quadcopter (right) with a custom base, enhancing stability and performance for
+                                    educational demonstrations and future class use</li>
+                                <li>Culminated the ASPiRe program with a comprehensive presentation, showcasing project outcomes
+                                    and engineering solutions to peers and faculty</li>
+                                </ul>
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- end proj 2 -->
+                        <!-- proj 3 -->
+                        <div class="p-2">
+                            <div class="card mb-3 text-center smallproj projectcard">
+                            <div id="carouselExampleIndicators3" class="carousel carousel-dark slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                <div class="carousel-item active ">
+                                    <img class="citem" src="img/Resized/rob6(Small).jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <video class="citem" src="img/Resized/ac.mp4" controls width="740px" height="660px"
+                                    type="video/mp4"></video>
+                                </div>
+                                <div class="carousel-item">
+                                    <video class="citem" src="img/Resized/gripper.mov" controls height="660px"></video>
+                                </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                                <div class="card-body cardtext">
+                                    <h5 class="card-title"><strong>Personal Projects</strong></h5>
+                                    <p class="card-text">
+                                    <ul>
+                                    <li>Gained hands-on experience with Dynamixel servo motors, enhancing understanding of their
+                                        applications in robotics</li>
+                                    <li>Constructed a basic air conditioning system to demonstrate the principles of evaporative
+                                        cooling and its practical applications</li>
+                                    <li>3D printed, assembled, and wired a small grabber, exploring its potential use in robotics
+                                        applications</li>
+                                    <li>Spent time learning about Lissajous figures</li>
+                                    <ul>
+                                        <li>
+                                        <a href="liss.html">Interactive Lissajous Figures Tool</a>
+                                        </li>
+                                    </ul>
+                                    </ul>
+                                    </p>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- end proj 3 -->
+                            </div>
+                            <!-- end of cards -->
+                        </div>
+                        </section>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap Javascript CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Custom Javascript File -->
+        <script src="port.js"></script>
+    </body>
 </html>
