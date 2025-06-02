@@ -14,7 +14,7 @@
     /* width:1050px; */
     width:80%;
     height:60%;
-    border:solid green;
+    /* border:solid green; */
 
 }
 
@@ -38,7 +38,7 @@ canvas {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    border:solid orange;
+    /* border:solid orange; */
 }
 
 /* style buttons, slider, and labels */
@@ -81,7 +81,7 @@ input[type="range"] {
   }
 
 #canvasContainer {
-    border:solid red;
+    
     display: flex;
     flex-direction: row;
     /* border:solid purple; */
