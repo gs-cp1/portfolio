@@ -2,20 +2,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('oscilloscope');
     const ctx = canvas.getContext('2d');
 
+    // Get frequency input
     const freqXInput = document.getElementById('freqX');
     const freqYInput = document.getElementById('freqY');
+
+    // Get phaseshift input
     const phaseShiftXInput = document.getElementById('phaseShiftX');
     const phaseShiftYInput = document.getElementById('phaseShiftY');
+
+    // Get frequency input from increase/decrease buttons
     const freqXDecreaseButton = document.getElementById('freqXDecrease');
     const freqXIncreaseButton = document.getElementById('freqXIncrease');
     const freqYDecreaseButton = document.getElementById('freqYDecrease');
     const freqYIncreaseButton = document.getElementById('freqYIncrease');
+
+    // Get phase input from increase/decrease buttons
     const phaseXDecreaseButton = document.getElementById('phaseXDecrease');
     const phaseXIncreaseButton = document.getElementById('phaseXIncrease');
     const phaseYDecreaseButton = document.getElementById('phaseYDecrease');
     const phaseYIncreaseButton = document.getElementById('phaseYIncrease');
+
+    // Get input from toggle rotation button
     const toggleRotationButton = document.getElementById('toggleRotation');
 
+    // Get frequency and phase shift values
     const freqXValue = document.getElementById('freqXValue');
     const freqYValue = document.getElementById('freqYValue');
     const phaseShiftXValue = document.getElementById('phaseShiftXValue');
@@ -27,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let phaseShiftY = parseFloat(phaseShiftYInput.value);
     const amplitude = 150;
 
+    // Initialize animation
     let rotating = false;
     let animationFrameId;
     let time = 0;
