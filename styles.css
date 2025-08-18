@@ -12,7 +12,9 @@ html, body {
 #right {
     background: var(--bs-secondary-bg);
     padding: 2%;
-    margin-top:96px;
+    margin-top:70px;
+    /* border:2px solid green; */
+
 }
 
 #favicon {
@@ -24,6 +26,8 @@ html, body {
 #navbar {
     position:fixed;
     z-index: 5;
+    /* border:2px solid red; */
+    height:10%;
 }
 
 #navtitle {
