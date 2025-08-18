@@ -1,7 +1,6 @@
 // Function to handle the activation of nav links
 function setActiveLink(event) {
     // Prevent the default action of the link
-    
 
     // Get all nav links
     const navLinks = document.querySelectorAll('.nav-link');
@@ -30,15 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            
+
             const targetId = this.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
-            
+
             if (targetElement) {
-                const customOffset = 10; // Adjust this value for additional space
+                const customOffset = 5; // Adjust this value for additional space
                 const offset = navbarHeight + customOffset; // Combine navbar height and custom offset
                 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
-                
+
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
@@ -52,6 +51,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
-
-  
